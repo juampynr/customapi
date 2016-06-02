@@ -1,0 +1,4 @@
+name: Custom API
+description: Sample module that shows how to create custom endpoints
+type: module
+core: 8.x

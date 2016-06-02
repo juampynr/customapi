@@ -1,0 +1,16 @@
+customapi.node_raw:
+  path: 'api/v1/node/{node}'
+  defaults:
+    _controller: '\Drupal\customapi\Controller\CustomApiController::getNodeWithDefaultSerializer'
+    _title: 'Returns a node in XML using the default normalizer'
+  requirements:
+    _permission: 'access content'
+
+
+customapi.node_custom:
+  path: 'api/v1/node-custom/{node}'
+  defaults:
+    _controller: '\Drupal\customapi\Controller\CustomApiController::getNodeWithNestedData'
+    _title: 'Returns a node in XML using custom structures'
+  requirements:
+    _permission: 'access content'

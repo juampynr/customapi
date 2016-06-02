@@ -1,0 +1,6 @@
+services:
+  customapi.normalizer.user.custom:
+    class: Drupal\customapi\Normalizer\UserCustomNormalizer
+    arguments: ['@entity.manager']
+    tags:
+      - { name: normalizer, priority: 0 }
